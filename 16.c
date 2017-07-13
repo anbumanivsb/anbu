@@ -1,18 +1,30 @@
 #include <stdio.h>
+int checkPrimeNumber(int n);
 int main()
 {
-    int l, h, i, f;
-    printf("Enter two numbers(intervals): ");
-    scanf("%d %d", &l, &h);
-    printf("Prime numbers between %d and %d are: ", l, h);
-    while (l < h)
+    int n1, n2, i, flag;
+    printf("Enter two positive integers: ");
+    scanf("%d %d", &n1, &n2);
+    printf("Prime numbers between %d and %d are: ", n1, n2);
+    for(i=n1+1; i<n2; ++i)
     {
-        f = 0;
-        for(i = 2; i <= l/2; ++i)
+       flag = checkPrimeNumber(i);
+        if(flag == 1)
+            printf("%d ",i);
+    }
+    return 0;
+}
+int checkPrimeNumber(int n)
+{
+    int j, flag = 1;
+
+    for(j=2; j <= n/2; ++j)
+    {
+        if (n%j == 0)
         {
-            if(l % i == 0)
-            {
-                f = 1;
-                break;
-            }
+            flag =0;
+            break;
         }
+    }
+    return flag;
+}
