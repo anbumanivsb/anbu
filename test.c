@@ -1,0 +1,10 @@
+#include<stdio.h>
+vnasd
+kfvnoakv
+]k'onvk'sdzmv
+kpdfmdp]fmnvb
+]zdkbkpbm
+mgzsbpmbps
+pkgbm]psdfmb
+mnb
+l
